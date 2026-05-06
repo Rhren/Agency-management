@@ -674,7 +674,7 @@
           </div>
         </div>
 
-        <!-- BLOC INFOS dans un seul cadre -->
+        <!-- BLOC INFOS -->
         <div class="profil-view__card">
 
           <div class="profil-view__card-section">

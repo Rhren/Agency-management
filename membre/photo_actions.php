@@ -1,4 +1,5 @@
 <?php
+
    session_start();
    require '../includes/db.php';
    
@@ -11,14 +12,13 @@
        SELECT photo FROM doc_membres
        WHERE id_utilisateur = ? AND type_doc = ?
    ");
+
    $stmt->execute([$user, $type]);
    
    $photo = $stmt->fetchColumn();
-   
 
     if($photo)
     {
-      
         if(file_exists("../uploads/".$photo))
         {
             unlink("../uploads/".$photo);
@@ -35,3 +35,4 @@
     exit;
 
 ?>
+
